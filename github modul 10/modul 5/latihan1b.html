@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latihan 1B - Media Query</title>
+
+    <style>
+        /* Logo disembunyikan secara default */
+        .logo {
+            display: none;
+        }
+
+        /* Logo hanya muncul jika lebar layar lebih dari 1024px */
+        @media screen and (min-width: 1025px) {
+            .logo {
+                display: block;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Web Design</h1>
+
+    <img src="Logo UNS.jpg" alt="Logo UNS" class="logo">
+
+</body>
+</html>
+```

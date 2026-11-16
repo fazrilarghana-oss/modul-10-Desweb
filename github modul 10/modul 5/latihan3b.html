@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latihan 3B - Animasi Transisi</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .objek {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: all 1s;
+        }
+
+        /* Ketika layar landscape */
+        @media screen and (orientation: landscape) {
+
+            .objek {
+                width: 250px;
+                height: 150px;
+                background-color: blue;
+                border-radius: 50%;
+
+                animation: putar 2s linear infinite;
+            }
+
+        }
+
+        /* Animasi berputar 360 derajat */
+        @keyframes putar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="objek"></div>
+
+</body>
+</html>
+```
